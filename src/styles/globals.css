@@ -2,25 +2,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #FAFBFF;
-  --color-bg-warm: #F5F3FF;
+  /* Warm earthy palette — matching the 3D character illustration */
+  --color-bg: #F5F0EB;
+  --color-bg-warm: #EDE5DB;
   --color-card: #FFFFFF;
-  --color-card-hover: #F8F6FF;
+  --color-card-hover: #FAF5EF;
 
-  --color-accent: #7C6FD4;
-  --color-accent-light: #A89BEB;
-  --color-accent-soft: #EDE9FF;
-  --color-accent-dark: #5B4FB8;
+  --color-accent: #7B8F6E;
+  --color-accent-light: #9DB08F;
+  --color-accent-soft: #E5EDE0;
+  --color-accent-dark: #5A6E4E;
 
-  --color-sage: #7BA58E;
-  --color-sage-soft: #E8F3ED;
+  --color-sage: #A68B6E;
+  --color-sage-soft: #F0E6DA;
 
-  --color-text-primary: #1E1E2E;
-  --color-text-secondary: #5A5A72;
-  --color-text-muted: #8E8EA0;
+  --color-text-primary: #3D2E22;
+  --color-text-secondary: #6B5B4E;
+  --color-text-muted: #9B8B7E;
 
-  --color-border: #E8E6F0;
-  --color-border-light: #F0EEF5;
+  --color-border: #DDD4C9;
+  --color-border-light: #EBE4DB;
 
   --color-white: #FFFFFF;
 
@@ -46,4 +47,21 @@ body {
 /* Smooth section scroll offset for sticky nav */
 section[id] {
   scroll-margin-top: 5rem;
+}
+
+/* Floating bob animation for hero decorators */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }
