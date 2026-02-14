@@ -52,20 +52,22 @@ export function HeroIntro() {
                 </div>
 
                 {/* Name + tagline overlay at the bottom */}
-                <div className="absolute bottom-12 sm:bottom-16 text-center z-10">
-                    <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-[#3D2E22] tracking-tight">
-                        Srividhya
-                    </h2>
-                    <p className="text-lg sm:text-xl md:text-2xl text-[#6B5B4E] mt-3 tracking-wide">
-                        Full-Stack Developer · Data · Cloud
-                    </p>
+                <div className="absolute bottom-12 sm:bottom-16 left-0 right-0 text-center z-10">
+                    <div className="inline-block bg-black/40 backdrop-blur-md rounded-2xl px-8 py-6 sm:px-12 sm:py-8">
+                        <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight drop-shadow-lg">
+                            Srividhya
+                        </h2>
+                        <p className="text-lg sm:text-xl md:text-2xl text-white/80 mt-3 tracking-wide">
+                            Full-Stack Developer · Data · Cloud
+                        </p>
 
-                    {/* Scroll prompt */}
-                    <div className="mt-6 flex flex-col items-center gap-2 text-[#8B7B6E] animate-pulse">
-                        <span className="text-sm sm:text-base tracking-[0.25em] uppercase">Scroll to explore</span>
-                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                        </svg>
+                        {/* Scroll prompt */}
+                        <div className="mt-6 flex flex-col items-center gap-2 text-white/60 animate-pulse">
+                            <span className="text-sm sm:text-base tracking-[0.25em] uppercase">Scroll to explore</span>
+                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
