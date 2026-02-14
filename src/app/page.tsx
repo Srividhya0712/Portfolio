@@ -1,12 +1,20 @@
+import { HeroIntro } from "~/components/Hero3DCard";
+
 export default function Home() {
   return (
     <main>
+      {/* ═══════════════════ INTRO OVERLAY ═══════════════════ */}
+      <HeroIntro />
+
+      {/* Spacer for the intro to scroll over */}
+      <div className="h-screen" />
+
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section
         id="hero"
         className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center"
       >
-        {/* Decorative gradient blob */}
+        {/* Decorative gradient blobs */}
         <div className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-accent-soft via-bg-warm to-transparent opacity-60 blur-3xl" />
 
         <p className="relative z-10 mb-4 text-lg font-medium text-accent">
@@ -24,8 +32,7 @@ export default function Home() {
         <p className="relative z-10 mt-6 max-w-xl text-lg leading-relaxed text-text-secondary">
           The kind that solve real problems and make life a little easier for
           users. I enjoy working end to end — from crafting clean interfaces to
-          building solid backends, working with data, and deploying applications
-          that scale without drama.
+          building solid backends and deploying apps that scale.
         </p>
 
         <div className="relative z-10 mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -41,12 +48,6 @@ export default function Home() {
           >
             Get in Touch
           </a>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-muted">
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
-          <div className="h-8 w-px bg-gradient-to-b from-text-muted/40 to-transparent" />
         </div>
       </section>
 
