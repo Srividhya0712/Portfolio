@@ -1,17 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #2F4156;
-  --color-teal: #567C8D;
-  --color-sky-blue: #C8D9E6;
-  --color-beige: #F5EFEB;
+  --color-bg: #FAFBFF;
+  --color-bg-warm: #F5F3FF;
+  --color-card: #FFFFFF;
+  --color-card-hover: #F8F6FF;
+
+  --color-accent: #7C6FD4;
+  --color-accent-light: #A89BEB;
+  --color-accent-soft: #EDE9FF;
+  --color-accent-dark: #5B4FB8;
+
+  --color-sage: #7BA58E;
+  --color-sage-soft: #E8F3ED;
+
+  --color-text-primary: #1E1E2E;
+  --color-text-secondary: #5A5A72;
+  --color-text-muted: #8E8EA0;
+
+  --color-border: #E8E6F0;
+  --color-border-light: #F0EEF5;
+
   --color-white: #FFFFFF;
 
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+  --font-sans: 'Inter', var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-:root {
-  --mouse-x: 50%;
-  --mouse-y: 50%;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+}
+
+/* Smooth section scroll offset for sticky nav */
+section[id] {
+  scroll-margin-top: 5rem;
 }
